@@ -1,0 +1,235 @@
+/* ===== RESET Y BASE ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* ===== SHELL ===== */
+.app-shell {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* ===== HOME ===== */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.home-card {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+}
+
+.home-card h1 {
+  font-size: 1.4rem;
+  color: #1a3a6b;
+  margin-bottom: 8px;
+}
+
+.home-card p {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.search-box {
+  display: flex;
+  gap: 8px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  background-color: #1a3a6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.search-box button:hover {
+  background-color: #2a5298;
+}
+
+/* ===== PÁGINA CONSTANCIA ===== */
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back-button {
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  background: #1a3a6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.back-button:hover {
+  background: #2a5298;
+}
+
+/* ===== TARJETA CONSTANCIA ===== */
+.certificate-card {
+  background: white;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.certificate-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.certificate-header h1 {
+  font-size: 1.2rem;
+  color: #1a3a6b;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.school-name {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.issue-date {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* ===== SECTION HEADER ===== */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+
+.section-accent {
+  width: 4px;
+  height: 20px;
+  background-color: #1a3a6b;
+  border-radius: 2px;
+}
+
+.section-header h2 {
+  font-size: 0.95rem;
+  color: #1a3a6b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ===== DATOS DEL ALUMNO ===== */
+.info-grid {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 8px 16px;
+  background: #f8f8f8;
+  padding: 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.info-label {
+  font-weight: bold;
+  color: #444;
+}
+
+/* ===== TABLA ===== */
+.courses-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+.courses-table th {
+  background-color: #1a3a6b;
+  color: white;
+  padding: 10px 8px;
+  text-align: left;
+}
+
+.courses-table td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.courses-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.total-courses {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* ===== FOOTER ===== */
+.certificate-footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #999;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+}
+
+/* ===== ESTADOS ===== */
+.status-message {
+  text-align: center;
+  padding: 40px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.status-message.error {
+  color: #c0392b;
+}
+
+.status-message button {
+  display: block;
+  margin: 16px auto 0;
+  padding: 8px 20px;
+  background: #1a3a6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+  padding: 20px;
+}
